@@ -15,9 +15,9 @@ def send_query():
 
     numberofbatch=1
     connection = sql.connect(
-        server_hostname='adb-3444365482071356.16.azuredatabricks.net',
-        http_path='/sql/1.0/endpoints/c99ec7169d9dcabf',
-        access_token='dapi1a7e6a5de54b65765e0593d25cbf9afc-3')
+        server_hostname='.16.azuredatabricks.net',
+        http_path='/sql/1.0/endpoints/',
+        access_token='')
     for iteration in numberofbatch:
         print("Iteration-->"+str(iteration))
         cursor = connection.cursor()
